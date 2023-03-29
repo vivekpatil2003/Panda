@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<!-- style tag is set the background color -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Panda</title>
+  <!-- <link rel="icon"
+    href="https://lh3.googleusercontent.com/EJVJGBIEqbi_qXgLRqnhIwDsl8bt6K45fQUn7_MZgHbvHT9q8d613ciR4IBnMHF8XdgU62cHD6vgJENVljFmwKm1U9Sa1fiR_Ss9ycc"
+    type="image/x-icon" /> -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegV_uFOSJkmq6WvrOY9FliyV_dHMyuossOA&usqp=CAU" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="mediaelement\src\css\mediaelementplayer.css">
+  <script src="mediaelement\mediaelement-and-player.min.js"></script>
+
+  <!-- nav css -->
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/song-cards.css">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+  <!-- search bar -->
+
+
+
+
+
+</head>
+
+<body>
+  <div>
+    <br>
+    <!-- <hr style="width: 50%;"> -->
+  </div>
+  <header>
+    <h1 >
+      <a href="index.html" style="text-decoration: none;">
+        Panda
+      </a>
+    </h1>
+    <link rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegV_uFOSJkmq6WvrOY9FliyV_dHMyuossOA&usqp=CAU"
+      type="image/x-icon" />
+
+    <nav>
+      <ul>
+
+        <nav>
+          <ul>
+
+            <li><a href="Hindi.html"  class="listHome">Hindi song </a> </li>
+            <!-- target blank means open link in new tab.  -->
+
+
+            <li><a href="Marathi.html"  class="listHome">Marathi song </a> </li>
+            <!-- target blank means open link in new tab.  -->
+
+            <li><a href="English.html" id="punjabiSongs" class="listHome">English song </a> </li>
+            <!-- target blank means open link in new tab.  -->
+
+            
+            <li><a href="Punjabi.html"  class="listHome">Punjabi song </a> </li>
+            <!-- target blank means open link in new tab.  -->
+
+            <!-- Search bar -->
+            <li>
+              <input type="text" id="searchInput" placeholder="Search music...">
+             
+            </li>
+
+          </ul>
+        </nav>
+        <!-- <li><a href="#">Marathi Song</a>  ♪ </li> -->
+        <!-- <li><a href="#">Punjabi Song</a>   ♪ </li> -->
+        <!-- <li><a href="#">Podcast</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+  <main>
+    <div>
+      <hr style="width: 80%;">
+    </div>
+    <section class="song-cards">
+
+      <ul class="ulClass" id="musicList">
+
+
+
+        <!-- nain ta heere-->
+        <li >
+          
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Nain Ta Heere" data-path="Music/nain ta heere.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQOBDTss6ql7v7M093yc6G9DQc-fB6YZh-JBXTE-hQ5a-rRWqcEiBMEL4v-X6lyBj16tE&usqp=CAU"
+                alt="Nain Ta Heere">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Nain Ta Heere</figcaption>
+                <p>Guru Randhawa</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!-- naiyo lagda-->
+        <li data-type="punjabi">
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Naiyo Lagda" data-path="Music/naiyo lagda.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273cba19d948e5e51b72d3202f2"
+                alt="Naiyo Lagda">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Naiyo Lagda</figcaption>
+                <p>Himesh Resham..</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!--ishq de fanniyar -->
+        <li >
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Ishq De Fanniyar" data-path="Music/Ishq De Fanniyar.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b2735f894fc238f88c7e8806b71e"
+                alt="Ishq De Fanniyar">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Ishq De Fanniyar</figcaption>
+                <p>Jyotica Tangri </p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+
+        <!--Tu Aake Dekhle -->
+        <li >
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Tu Aake Dekhle" data-path="Music/Tu Aake Dekhle.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273e0fc847e272a9bf7a04643da"
+                alt="Tu Aake Dekhle">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Tu Aake Dekhle</figcaption>
+                <p>King 🤴🏽</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+        <!--Barbaadiyan -->
+        <li >
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Barbaadiyan" data-path="Music/Barbaadiyan.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273e4c77dc1b6c85c754f7f136c"
+                alt="Barbaadiyan">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Barbaadiyan</figcaption>
+                <p>Sachet Tandon</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+        <!--Ae Dil Hai Mushkil -->
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Ae Dil Hai Mushkil" data-path="Music/Ae Dil Hai Mushkil.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273c8e96da2669b5d51ee36205a"
+                alt="Ae Dil Hai Mushkil">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Ae Dil Hai Mushkil</figcaption>
+                <p>Arijit Si
+                <p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!--Lut Gaye-->
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Lut Gaye" data-path="Music/Lut Gaye.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b2738634403946cb8f08b83e4c40"
+                alt="Lut Gaye">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Lut Gaye</figcaption>
+                <p>Jubin Nautiyal
+                <p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!--Dhokha-->
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Dhokha" data-path="Music/Dhokha.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b27382e83ecd42ec31efc4de8db7"
+                alt="Dhokha">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Dhokha</figcaption>
+                <p>Arijit Singh
+                <p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!--Paani Paani-->
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Paani Paani" data-path="Music/Paani Paani.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b2730fdc906c51a76cc1b74d28dd"
+                alt="Paani Paani">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Paani Paani</figcaption>
+                <p>Badshah
+                <p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!-- Main Khiladi-->
+
+        <li>
+          <figure data-title="Main Khiladi" data-path="Music/main khiladi.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b2736c429bef5419048ed6dad423"
+                alt="Song 1">
+              <div class="song-details">
+                <figcaption>Main Khiladi</figcaption>
+                <p>Udit Narayan</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+        <!-- Thoda Thoda Pyaar-->
+
+        <li>
+          <figure data-title="Thoda Thoda Pyaar" data-path="Music/Thoda Thoda Pyaar.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273125c0e611fbe03c3dcbc6a3b"
+                alt="Thoda Thoda Pyaar">
+              <div class="song-details">
+                <figcaption>Thoda Thoda Pyaar</figcaption>
+                <p>Stebin Ben</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+        <!-- Najaa-->
+
+        <li>
+          <figure data-title="Najaa" data-path="Music/Najaa.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273779e80010d48e9848669512c" alt="Najaa">
+              <div class="song-details">
+                <figcaption>Najaa</figcaption>
+                <p> Pav Dharia & Nikhita</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!-- Is Qadar-->
+
+        <li>
+          <figure data-title="Is Qadar" data-path="Music/Is Qadar.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273174745ac9424fef09d54ee3a"
+                alt="Is Qadar">
+              <div class="song-details">
+                <figcaption>Is Qadar</figcaption>
+                <p> Tulsi Kumar</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+        <!-- Barsaat ki Dhun-->
+
+        <li>
+          <figure data-title="Barsaat ki Dhun" data-path="Music/Barsaat ki Dhun.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273271cc4bcc2e583aac3131541"
+                alt="Barsaat ki Dhun">
+              <div class="song-details">
+                <figcaption>Barsaat ki Dhun</figcaption>
+                <p> Jubin Nautiyal</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+        <!-- Jugnu-->
+
+        <li>
+          <figure data-title="Jugnu" data-path="Music/Jugnu.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273efe374ffabeb543840dee228" alt="Jugnu">
+              <div class="song-details">
+                <figcaption>Jugnu</figcaption>
+                <p> Badshah</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+        <!-- Yaara Teri Yaari -->
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Yaara Teri Yaari " data-path="Music/Yaara Teri Yaari.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d00001e02c1ad638c3b55bb0afd28a3ae"
+                alt="Yaara Teri Yaari ">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Yaara Teri Yaari </figcaption>
+                <p> DARSHAN RAVAL</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!-- Perfect-->
+
+        <li>
+          <figure data-title="Perfect - Ed Sheeran" data-path="Music/perfect.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="songImages/perfect by Ed Sheeran.jpg" alt="Song 1">
+              <div class="song-details">
+                <figcaption>Perfect</figcaption>
+                <p>Ed Sheeran</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!-- Elevated -->
+        <li>
+          <figure data-title="Elevated" data-path="Music/elevated.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b27303712fdb8fc3156aee9f85af"
+                alt="Elevated">
+              <div class="song-details">
+                <figcaption>Elevated</figcaption>
+                <p>Shubh</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+        <!-- I Like Me Better -->
+        <li>
+          <figure data-title="I Like Me Better" data-path="Music/I Like Me Better.mp3">
+            <div class="song-container">
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273fab48816b625e2a77a732400"
+                alt="Elevated">
+              <div class="song-details">
+                <figcaption>I Like Me Better</figcaption>
+                <p>Lauv</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+        <!-- Bones -->
+
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Bones" data-path="Music/bones.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273813713582dcc508e7d5073c4" alt="Bones">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Bones</figcaption>
+                <p>Imagine Dragons</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+
+
+        <!-- daku -->
+        <li>
+          <!-- write path of song in data-path  and data-title as the song name which will appear on the bottom-->
+          <figure data-title="Daku" data-path="Music/daku.mp3">
+            <div class="song-container">
+              <!-- change image src according to your song  and alt text also Note: always take img from spotify-->
+              <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b273705ab6e67003b22644e62964" alt="Daku">
+              <div class="song-details">
+                <!-- Write Song Details -->
+                <figcaption>Daku</figcaption>
+                <p>Chani Nattan</p>
+              </div>
+            </div>
+          </figure>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+  <footer id="footer">
+
+
+
+    <img src="" id="footerImage">
+    <div id="playerTitle"></div>
+
+
+    <audio id="audio-player" controls>
+      <source src="" type="audio/mpeg">
+
+    </audio>
+
+
+  </footer>
+  <script>
+    const allSongs = document.getElementsByTagName("figure");
+
+    const songPlayer = document.getElementById("audio-player");
+
+    function playSong() {
+      const path = this.getAttribute("data-path");
+      songPlayer.src = path;
+      songPlayer.play();
+
+      const title = this.getAttribute("data-title");
+      var bottomTitle = document.getElementById("playerTitle")
+      bottomTitle.innerText = title;
+      bottomTitle.style.fontFamily = 'cursive';
+      var img = this.querySelector('.thumbnail');
+      var url = img.src;
+      console.log(url)
+
+      document.getElementById("footerImage").src = url
+    }
+
+    for (let i = 0; i < allSongs.length; i++) {
+      allSongs[i].addEventListener("click", playSong);
+    }
+
+
+  </script>
+  <script src="search.js"></script>
+
+</body>
+
+
+</html>

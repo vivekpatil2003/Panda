@@ -1,0 +1,31 @@
+
+.song-container figure {
+    width: 30%; /* set a width for each item */
+    margin-bottom: 1rem; /* add some vertical space between items */
+  }
+  
+  
+  figure {
+    margin: 10px;
+    text-align: center;
+    max-width: 200px;
+  }
+  
+
+  .ulClass {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+ .ulClass li {
+    margin: 0 10px;
+  } 
+
+  .ulClass {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0.1%;
+  }
+  
