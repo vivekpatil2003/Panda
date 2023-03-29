@@ -31,25 +31,7 @@
     font-size: 1.2em;
     color: #898989;
   }
-/*   
-  @media screen and (max-width: 768px) {
-    .song-container {
-      flex-direction: column;
-    }
-    
-    .song-container img {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    
-    .song-details h2 {
-      font-size: 1.2em;
-    }
-    
-    .song-details p {
-      font-size: 1em;
-    }
-  } */
+  
 .song-container{
   border-radius: 5%;
 }
@@ -98,3 +80,18 @@ footer img{
   border-radius: 4px;
 }
 
+
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    background-color: #f1f3f4;
+    bottom: 38px;
+    width: 100%;
+    margin-bottom: 6%;
+}
+}
